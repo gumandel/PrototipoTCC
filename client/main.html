@@ -1,0 +1,42 @@
+<head>
+  <meta charset="utf-8">
+  <title>Chatbot para recomendação de equipamentos</title>
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <script src="main.jsx" defer></script>
+</head>
+<body>
+  <button class="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+    <header>
+      <h2>Chatbot</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>
+          🤖 <b>Olá, sou um Chatbot de recomendação de equipamentos. O processo de busca é dividido em duas etapas: computador e periféricos. </b> <br>
+          💻 <b>Para iniciar a busca por computador, basta enviar uma mensagem com base no modelo abaixo: </b> <br>
+          <i>"Gostaria de analisar diferentes modelos de computadores com o valor de até R$ [orçamento], do tipo [notebook ou desktop], com o tamanho de tela de [quantidade de polegadas] polegadas. Esse computador será usado para [finalidade]." </i> <br>
+          Caso os itens listados não lhe agradem, basta pedir para ver modelos semelhantes. Com o computador em mente, podemos seguir para a próxima etapa. <br>
+          🎧 <b>Para iniciar a busca por periféricos, basta enviar uma mensagem com base no modelo abaixo: </b> <br>
+          <i>"Gostaria de analisar [tipo(s) de periférico(s)] compatíveis com o [modelo de computador escolhido] e pretendo gastar até R$ [valor] no total com periféricos." </i> <br>
+          Com o notebook e/ou periféricos em mente, basta enviar uma mensagem com base no modelo abaixo: <br>
+          <i>"Minhas escolhas são: [Nome dos modelos de computador e periférico(s)]. Em que lojas eu poderia encontrá-los?" </i> <br>
+          👍 Com as lojas recomendadas, o processo de busca está finalizado, por favor informe seu endereço de e-mail e descreva como foi sua experiência utilizando este sistema.
+        </p>     
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Digite aqui..." spellcheck="false" required></textarea>
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+    </div>
+  </div>
+</body>
